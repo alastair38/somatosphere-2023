@@ -43,7 +43,7 @@
 			
 			
 				<?php //show citations from academic citation plugin
-				if (function_exists('outputCitations')):?>
+				if (function_exists('outputCitations') && is_singular()):?>
 					<div class="citations-block">
 					<?php echo outputCitations();?>
 					</div>
