@@ -51,7 +51,13 @@
 						<ul class="guests">
 							<?php
 							
-							// Get the authors from the database ordered by user nicename
+							$blogusers = get_users( 'orderby=meta_value&meta_key=last_name&role=contributor' );
+// Array of WP_User objects.
+foreach ( $blogusers as $user ) {
+	echo '<li>' . esc_html( $user->nicename ) . '</li>';
+}
+							
+					/* 		// Get the authors from the database ordered by user nicename
 								global $wpdb;
 								$query = "SELECT user_id, meta_value FROM $wpdb->usermeta WHERE meta_key = 'last_name' ORDER BY meta_value";
 								$author_ids = $wpdb->get_results($query);
@@ -67,7 +73,7 @@
 								<?php if ($curauth->user_description) { ?>, <?php echo($curauth->user_description); } ?>
 							</li>
 							<?php	}
-								}
+								} */
 							?>
 						</ul>
 						<?php } ?>
