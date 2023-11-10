@@ -1,0 +1,70 @@
+/* 
+Theme Name: Twenty Twenty Child 
+Theme URI: http://yourdomain.com
+Description: Twenty Twenty Child 
+Theme Author: Alastair Cox
+Author URI: 
+Template: twentytwenty
+Version: 1.0.0
+Text Domain: twentytwenty-child
+License: GNU General Public License or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+*/
+
+body {
+  background: #f8f9f9;
+}
+
+h1,
+.heading-size-1 {
+  font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+}
+
+h2.entry-title,
+.comment-reply-title {
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+
+h4,
+.heading-size-4,
+.pagination-single,
+.search-modal .search-field {
+  font-size: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+}
+
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+}
+
+.logo img {
+  height: clamp(2rem, 3vw, 6rem);
+}
+
+a.logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7em;
+  font-style: italic;
+  text-transform: lowercase;
+  color: rgb(109, 109, 109);
+}
+
+.view_citations_link,
+.hide_citations_link {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.citation_box {
+  padding-block: 2rem;
+}
