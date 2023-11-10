@@ -29,8 +29,9 @@ if( !empty($block['align']) ) {
 
 <?php
 
-
-$taxonomy = get_field('taxonomy');
+if(function_exists('get_field')):
+  $taxonomy = get_field('taxonomy');
+endif;
 
 if(!isset($taxonomy)):
   
@@ -55,8 +56,6 @@ foreach($terms as $term) { ?>
   <a class="rounded-md text-sm inline-block w-fit bg-contrast text-white px-6 py-2 ring-2 ring-offset-2 ring-transparent ring-offset-neutral-light-100 hover:ring-contrast focus:ring-contrast" href="<?php echo esc_url(get_term_link($term->term_id));?>">
     <h2 class="col-span-full text-lg font-black"><?php echo $term->name ;?></h2>
   </a>
-  
-
 
 <?php
 }?>
