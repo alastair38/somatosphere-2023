@@ -36,7 +36,7 @@ $termArr = [];
 // add forumpost content to main_query
 
 function soma_include_custom_post_types_in_search_results( $query ) {
-  if ( $query->is_main_query() && $query->is_search() && ! is_admin() ) {
+  if ( ($query->is_main_query() || $query->is_search()) && ! is_admin() ) {
       $query->set( 'post_type', array( 'post', 'forumpost' ) );
   }
 }
