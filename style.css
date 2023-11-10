@@ -26,6 +26,11 @@ h2.entry-title,
   font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
 }
 
+h3,
+.heading-size-3 {
+  font-size: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+}
+
 h4,
 .heading-size-4,
 .pagination-single,
