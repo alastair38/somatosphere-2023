@@ -54,7 +54,7 @@
 							$blogusers = get_users( 'orderby=meta_value&meta_key=last_name&role=contributor' );
 // Array of WP_User objects.
 foreach ( $blogusers as $user ) {
-	echo '<li>' . esc_html( $user->nicename ) . '</li>';
+	echo '<li>' . esc_html( $user->display_name ) . '</li>';
 }
 							
 					/* 		// Get the authors from the database ordered by user nicename
