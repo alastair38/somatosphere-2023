@@ -56,24 +56,7 @@
 foreach ( $blogusers as $user ) {
 	echo '<li><a href="' . get_author_posts_url($user->ID) . '">' . esc_html( $user->display_name ) . '</a></li>';
 }
-							
-					/* 		// Get the authors from the database ordered by user nicename
-								global $wpdb;
-								$query = "SELECT user_id, meta_value FROM $wpdb->usermeta WHERE meta_key = 'last_name' ORDER BY meta_value";
-								$author_ids = $wpdb->get_results($query);
-						//	print_r($author_ids);
-							// Loop through each author
-								foreach($author_ids as $author) {
-								// Get user data
-									$curauth = get_userdata($author->user_id);
-								// If user level is above 0 or login name is "admin", display profile
-									if($curauth->user_level < 2 ) { ?>
-							<li>
-								<strong><a href="<?php echo get_author_posts_url($curauth->ID); ?>"><?php echo $curauth->first_name . " " . $curauth->last_name; ?></a></strong>
-								<?php if ($curauth->user_description) { ?>, <?php echo($curauth->user_description); } ?>
-							</li>
-							<?php	}
-								} */
+				
 							?>
 						</ul>
 						<?php } ?>

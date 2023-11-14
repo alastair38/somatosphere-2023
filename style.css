@@ -73,3 +73,36 @@ a.logo {
 .citation_box {
   padding-block: 2rem;
 }
+
+/* CUSTOM CSS TO BE ADDED
+
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon,
+.modal-menu a,
+.footer-menu a,
+.footer-widgets a,
+#site-footer .wp-block-button.is-style-outline,
+.wp-block-pullquote:before,
+.singular:not(.overlay-header) .entry-header a,
+.archive-header a,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover, .entry-categories-inner a, .color-accent, .color-accent-hover:hover, .color-accent-hover:focus, :root .has-accent-color, .has-drop-cap:not(:focus):first-letter, .wp-block-button.is-style-outline, a {
+  color: #222;
+	text-decoration-color: #00cfe3;
+}
+
+.entry-categories-inner a {
+	border-color: #00cfe3;
+	border-width: 0.25rem;
+}
+
+a {
+  text-decoration-color: #00cfe3;
+}
+
+blockquote,
+.border-color-accent,
+.border-color-accent-hover:hover,
+.border-color-accent-hover:focus {
+  border-color: #00cfe3;
+} */

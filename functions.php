@@ -37,7 +37,7 @@ $termArr = [];
 
 function soma_include_custom_post_types_in_search_results( $query ) {
   if ( ($query->is_main_query() || $query->is_search()) && ! is_admin() ) {
-      $query->set( 'post_type', array( 'post', 'forumpost' ) );
+      $query->set( 'post_type', array( 'post', 'page', 'forumpost' ) );
   }
 }
 add_action( 'pre_get_posts', 'soma_include_custom_post_types_in_search_results' );
